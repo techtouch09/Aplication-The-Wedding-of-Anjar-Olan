@@ -1,0 +1,10 @@
+Source code untuk menampilkan video
+
+<div class="card">
+                <div class="folder-tag">Momen Berdua (Video)</div>
+                <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    <source src="berdua/video berdua/video-1.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+                <div class="overlay"><span>Lihat Video</span></div>
+            </div>
