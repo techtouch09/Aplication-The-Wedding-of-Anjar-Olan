@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Anjar & Olan - Kisah Kita</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="musik/lesung-pipi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <header>
+        <div class="hero">
+            <h1>The Wedding</h1>
+            <p>Menyatu dalam Cinta, Melangkah dalam Ibadah</p>
+        </div>
+    </header>
+
+    <nav class="filter-nav">
+        <div class="nav-content">
+            <div class="nav-spacer"></div>
+            <span class="nav-title">Momen Bahagia Bersama Pasangan Tercinta</span>
+            <div class="menu-wrapper">
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <div class="menu-container" id="menuContainer">
+                    
+                        <div class="menu-folder">
+                            <div class="folder-label">📁 Galeri Utama</div>
+                            <button class="btn active" data-filter="all">Semua Momen</button>
+                        </div>
+                    <div class="menu-folder">
+                        <div class="folder-label">📁 Tunangan</div>
+                        <button class="btn" data-filter="cincin">Tukar Cincin</button>
+                        <button class="btn" data-filter="berdua">Berdua</button>
+                        <button class="btn" data-filter="keluarga">Keluarga</button>
+                        <button class="btn" data-filter="saudara">Saudara</button>
+                        <button class="btn" data-filter="tunangan-kita">Foto Saya & Kamu</button>
+                        <button class="btn" data-filter="video-tunangan-kita">Video Tunangan</button>
+                    </div>
+
+                    <div class="menu-folder">
+                        <div class="folder-label">📁 Persiapan Nikah</div>
+                        <button class="btn" data-filter="prewed-kita">Foto Saya & Kamu</button>
+                        <button class="btn" data-filter="prewedding">Prewedding</button>
+                        <button class="btn" data-filter="fotobgbiru">Foto Background Biru</button>
+                        <button class="btn" data-filter="video-prewed-prewed">Video Prewed</button>
+                    </div>
+
+                    <div class="menu-folder">
+                        <div class="folder-label">📁 Ikatan Pernikahan</div>
+                        
+                        <div class="sub-folder-label">💍 Akad Nikah</div>
+                        <button class="btn" data-filter="akad-dokumen">Dokumen & Administrasi</button>
+                        <button class="btn" data-filter="akad-maskawin">Prosesi Maskawin</button>
+                        <button class="btn" data-filter="akad-ijab">Ijab Qabul</button>
+                        <button class="btn" data-filter="video-akad-kita">Video Akad Nikah</button>
+
+                        <div class="sub-folder-label">🎉 Resepsi</div>
+                        <button class="btn" data-filter="resepsi-dekor">Dekorasi & Pelaminan</button>
+                        <button class="btn" data-filter="resepsi-katering">Katering & Hidangan</button>
+                        <button class="btn" data-filter="resepsi-tamu">Momen Tamu Undangan</button>
+
+                        <div class="sub-folder-label">📸 Dokumentasi Foto-foto</div>
+                        <button class="btn" data-filter="momen-kita">Foto Saya & Kamu</button>
+                        <button class="btn" data-filter="resepsi-berdua">Momen Berdua</button>
+                        <button class="btn" data-filter="resepsi-keluarga">Momen Keluarga</button>
+                        <button class="btn" data-filter="resepsi-saudara">Momen Saudara</button>
+                        <button class="btn" data-filter="resepsi-teman">Momen Teman</button>
+                        <button class="btn" data-filter="video-resepsi-kita">Video Resepsi Pernikahan</button>
+
+                        <div class="sub-folder-label">💰 Mahar</div>
+                        <button class="btn" data-filter="mahar">Berkas Mahar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="gallery" id="gallery-grid">
+        <div class="photo-item cincin">
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-1.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-2.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-3.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-4.jpeg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-5.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-6.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-7.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-8.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-9.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-10.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-11.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-12.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-13.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-14.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-15.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Cincin</div> 
+                <img src="cincin/foto cincin-16.jpg" alt="Tukar Cincin">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+           
+        </div>
+
+        <div class="photo-item berdua">
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-1.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-2.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-3.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-4.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-5.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-6.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-7.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-8.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-9.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-10.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Momen Berdua</div>
+                <img src="berdua/foto berdua-11.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-12.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-13.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-14.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-15.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-16.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-17.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-18.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-19.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-20.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-21.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-22.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-23.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-24.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-25.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-26.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-26.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-27.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Berdua</div>
+                <img src="berdua/foto berdua-28.jpg" alt="Berdua">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+        </div>
+
+        <div class="photo-item keluarga">
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Keluarga</div>
+                <img src="keluarga/foto keluarga-1.jpg" alt="Keluarga">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Keluarga</div>
+                <img src="keluarga/foto keluarga-2.jpg" alt="Keluarga">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Keluarga</div>
+                <img src="keluarga/foto keluarga-3.jpg" alt="Keluarga">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Keluarga</div>
+                <img src="keluarga/foto keluarga-4.jpg" alt="Keluarga">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Keluarga</div>
+                <img src="keluarga/foto keluarga-5.jpg" alt="Keluarga">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Keluarga</div>
+                <img src="keluarga/foto keluarga-6.jpg" alt="Keluarga">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Keluarga</div>
+                <img src="keluarga/foto keluarga-7.jpg" alt="Keluarga">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Keluarga</div>
+                <img src="keluarga/foto keluarga-8.jpg" alt="Keluarga">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Keluarga</div>
+                <img src="keluarga/foto keluarga-9.jpg" alt="Keluarga">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Keluarga</div>
+                <img src="keluarga/foto keluarga-10.jpg" alt="Keluarga">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Keluarga</div>
+                <img src="keluarga/foto keluarga-11.jpg" alt="Keluarga">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Keluarga</div>
+                <img src="keluarga/foto keluarga-12.jpg" alt="Keluarga">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+        </div>
+
+        <div class="photo-item saudara">
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-1.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-2.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-3.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-4.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-5.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-6.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-7.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-8.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-9.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-10.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-11.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-12.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-13.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-14.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-15.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-16.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-17.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-18.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-19.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-20.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-21.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-22.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-23.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-24.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-25.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-26.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-27.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-28.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-29.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-30.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-31.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-32.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-33.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-34.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-35.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-36.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Saudara</div>
+                <img src="saudara/foto saudara-37.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+        </div>
+
+        <div class="photo-item tunangan-kita">
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Kita</div>
+                <img src="tunangan-saya & kamu/foto A&O-1.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Kita</div>
+                <img src="tunangan-saya & kamu/foto A&O-2.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+
+            <div class="card">
+                <div class="folder-tag">Tunangan/Momen Kita</div>
+                <img src="tunangan-saya & kamu/foto A&O-3.jpg" alt="Saudara">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div> 
+        </div>
+        </main>
+
+        <div id="photoModal" class="modal">
+            <span class="close-modal">&times;</span>
+            
+            <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+            
+            <div class="modal-content-wrapper">
+                <img id="imgFull" src="" alt="Foto Besar">
+                <p id="downloadBtn" class="download-info">Tekan lama atau klik kanan pada foto untuk mengunduh</p>
+            </div>
+            
+            <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+        </div>
+
+    <footer>
+        <p>&copy; Kisah Kita | Lagu: <strong>Lesung Pipi</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
