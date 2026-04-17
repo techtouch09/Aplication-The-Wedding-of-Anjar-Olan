@@ -1,0 +1,304 @@
+/* =========================================
+    Dasar & Reset 
+   ========================================= */
+   * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: 'Poppins', sans-serif; 
+    background: #ffffff; 
+    color: #444; 
+    overflow-x: hidden; 
+}
+
+/* =========================================
+    Hero Section 
+   ========================================= */
+header { 
+    height: 40vh; 
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('bg/bg.jpeg');
+    background-size: cover; 
+    background-position: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: white;
+}
+
+h1 { font-family: 'Dancing Script', cursive; font-size: clamp(2.5rem, 8vw, 4rem); }
+
+/* =========================================
+    Navigasi Filter & Tombol Garis 3
+   ========================================= */
+.filter-nav { 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    background: #000000; 
+    padding: 10px 20px;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: auto; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.nav-title { color: #ffffff; font-weight: 600; text-align: center; flex: 1; font-size: 0.9rem; }
+
+.menu-wrapper { 
+    width: 40px; 
+    display: flex;
+    justify-content: flex-end;
+    position: relative; 
+}
+
+/* Tombol Garis 3 */
+.menu-toggle {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+/* Container Menu Dropdown - FIXED FOR SCROLL */
+.menu-container {
+    display: none; /* Muncul lewat JS */
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: #000000;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    min-width: 260px;
+    
+    /* Perintah: Agar bisa scroll ke bawah */
+    max-height: 70vh; /* Membatasi tinggi agar scroll muncul */
+    overflow-y: auto; /* Aktifkan scroll vertikal */
+    scrollbar-width: thin; /* Untuk Firefox */
+    scrollbar-color: #ff4d4d #000000;
+    
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Custom Scrollbar untuk Chrome/Edge/Safari */
+.menu-container::-webkit-scrollbar {
+    width: 6px;
+}
+.menu-container::-webkit-scrollbar-thumb {
+    background: #ff4d4d;
+    border-radius: 10px;
+}
+
+/* --- PERBAIKAN NAMA FOLDER --- */
+.menu-folder { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    border-bottom: 1px solid #222; 
+    padding-bottom: 15px; 
+    margin-bottom: 10px;
+}
+
+.folder-label { 
+    display: block; 
+    color: #ff4d4d; 
+    font-size: 0.85rem; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    border-left: 3px solid #ff4d4d; 
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+.btn { 
+    padding: 10px 15px; 
+    border: 1px solid #333; 
+    background: #111; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    color: #ffffff; 
+    font-size: 0.8rem; 
+    text-align: left; 
+    transition: 0.3s;
+}
+
+.btn.active, .btn:hover { 
+    background: #ff4d4d; 
+    color: #ffffff; 
+    border-color: #ff4d4d; 
+}
+
+/* =========================================
+    GALERI GRID
+   ========================================= */
+.gallery { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+.photo-item { display: contents; }
+
+.card { 
+    position: relative; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    height: 350px; 
+    cursor: pointer; 
+    background: #f9f9f9;
+}
+
+.card img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+    transition: 0.5s ease; 
+}
+
+.card:hover img { transform: scale(1.05); }
+
+/* =========================================
+    MODAL (X Kecil & Aksen Merah)
+   ========================================= */
+.modal { 
+    display: none; 
+    position: fixed; 
+    inset: 0; 
+    z-index: 9999; 
+    background: rgba(0,0,0,0.95); 
+    align-items: center; 
+    justify-content: center; 
+    backdrop-filter: blur(10px); 
+}
+
+.modal-content-wrapper { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    gap: 20px; 
+    width: 95%; 
+    max-width: 1200px;
+    position: relative;
+}
+
+#imgFull { 
+    max-width: 100%; 
+    max-height: 80vh; 
+    border: 4px solid #ffffff; 
+    border-radius: 8px; 
+    object-fit: contain; 
+}
+
+.download-link { 
+    color: #ffffff; 
+    text-decoration: none; 
+    background: #333; 
+    padding: 14px 40px; 
+    border-radius: 50px; 
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.download-link:hover { background: #ff4d4d; transform: translateY(-3px); }
+
+/* Close X Kecil */
+.close-modal { 
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    color: white; 
+    font-size: 2rem; 
+    cursor: pointer; 
+    line-height: 1; 
+    z-index: 10001;
+    transition: 0.3s;
+}
+
+.close-modal:hover { color: #ff4d4d; transform: rotate(90deg); }
+
+/* Navigasi Panah */
+.nav-btn { 
+    position: absolute; 
+    background: rgba(255, 255, 255, 0.1); 
+    border: none; 
+    color: white; 
+    font-size: 2.5rem; 
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    transition: 0.3s; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10002;
+}
+
+/* Style Dasar untuk Label Nama Folder di Atas Foto */
+.folder-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(255, 255, 255, 0.6); 
+    color: #000000; 
+    backdrop-filter: blur(4px); 
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 20px;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Tampilkan saat Foto di-hover */
+.card:hover .folder-tag {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-btn:hover { background: #ff4d4d; color: white; }
+
+.prev-btn { left: 20px; } 
+.next-btn { right: 20px; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .gallery { grid-template-columns: 1fr; }
+    .nav-btn { width: 45px; height: 45px; font-size: 1.8rem; background: rgba(0,0,0,0.5); }
+    .close-modal { top: 15px; right: 15px; font-size: 1.8rem; }
+    .menu-container { max-height: 60vh; } /* Lebih pendek di mobile */
+}
+
+footer { text-align: center; padding: 40px; color: #999; font-size: 0.8rem; }
